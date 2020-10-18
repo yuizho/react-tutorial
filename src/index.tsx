@@ -5,6 +5,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { format } from "path";
 import Clock from "./components/Clock";
+import Toggle from "./components/Toggle";
 
 type User = {
   firstName: string;
@@ -23,6 +24,7 @@ function tick() {
   ReactDOM.render(
     <>
       <Clock />
+      <Toggle />
     </>,
     document.getElementById("root")
   );
