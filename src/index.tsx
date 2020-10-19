@@ -6,6 +6,9 @@ import * as serviceWorker from "./serviceWorker";
 import { format } from "path";
 import Clock from "./components/Clock";
 import Toggle from "./components/Toggle";
+import Greeting from "./components/Greeting";
+import NumberList from "./components/NumberList";
+import Form from "./components/Form";
 
 type User = {
   firstName: string;
@@ -25,6 +28,9 @@ function tick() {
     <>
       <Clock />
       <Toggle />
+      <Greeting isLoggedIn={false} />
+      <NumberList numbers={[1, 2, 3, 4, 5]} />
+      <Form />
     </>,
     document.getElementById("root")
   );
